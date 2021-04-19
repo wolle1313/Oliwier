@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cover"></div>
+    <div class="score"><span class="scoreS">coś</span><button class="btnScore">Graj ponownie</button></div>
+
+    <div class="menu choice">
+        <div class="exit choice"><img src="pics/cross.png"></div>
+        <span>Wybierz</span>
+
+        <div class="items">
+        <div class="choose" id="choice2">
+            <img src="pics/circle.png">
+            <span>Kółko</span>
+        </div>
+        <div class="choose" id="choice1">
+            <img class="selected" src="pics/cross.png">
+            <span>Krzyżyk</span>
+        </div>
+    </div>
+
+    <button class="chooser">Potwierdź</button>
+    <span>Uwaga zmiana znaku w trakcie rozpoczętej gry zakończy obecną rozgrywkę przegraną!</span>
+    </div>
+
+    <div class="menu instruction">
+        <div class="exit instruction"><img src="pics/cross.png"></div>
+        <span>Zasady gry:</span>
+        <span class="rules"><br>Celem gry jest ustawienie trzech symboli w lini pionowej, poziomej, bądź ukośnej zanim dokona tego przeciwnik. Gra na raz dwóch graczy (w tym wypadku przeciwnikiem jest AI) i każdy z nich ma swój symbol, jeden kółko drugi krzyżyk. Tury są wykonywane naprzemiennie i należy postawić symbol na planszy 3x3 tam gdzie jeszcze żadnego nie ma. W przypadku gdy nikomu nie udało się ustawić trzech symboli w lini jest remis. <br>Powodzenia!</span>
+    </div>
+
+    <div class="wrapper">
+    <header>
+        <h1>Kółko i krzyżyk</h1>
+    </header>
+    <aside><button class="btn open">Menu</button>
+    <button class="btn instr">Instrukcja</button>
+    </aside>
+    <main>
+        <div class="game">
+        <div class="square no1"><img class="sqimg no1" src=""></div>
+        <div class="square no2"><img class="sqimg no2" src=""></div>
+        <div class="square no3"><img class="sqimg no3" src=""></div>
+        <div class="square no4"><img class="sqimg no4" src=""></div>
+        <div class="square no5"><img class="sqimg no5" src=""></div>
+        <div class="square no6"><img class="sqimg no6" src=""></div>
+        <div class="square no7"><img class="sqimg no7" src=""></div>
+        <div class="square no8"><img class="sqimg no8" src=""></div>
+        <div class="square no9"><img class="sqimg no9" src=""></div>
+    </div>
+    </main>
+    <footer>zrobione przez: Oliwier Orlik</footer>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

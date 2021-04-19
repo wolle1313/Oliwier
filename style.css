@@ -1,0 +1,201 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: url("pics/stars.jpg");
+    background-size: 50%;
+
+}
+
+.menu {
+    position: fixed;
+    top: 25vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid black;
+    padding: 10px;
+    height: 450px;
+    width: 500px;
+    display: none;
+    z-index: 1;
+}
+
+.exit img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.menu .items {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.choose {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.choose:hover {
+    background-color: rgb(243, 243, 243);
+}
+
+.menu span {
+    text-align: center;
+    margin-top: 20px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.menu button {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-size: 23px;
+    width: 150px;
+    cursor: pointer;
+
+}
+
+.menu span:last-child {
+    width: 100%;
+    display: block;
+}
+
+.wrapper {
+    background-color: white;
+    height: 100vh;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.wrapper>* {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper>header {
+    padding: 20px 0;
+}
+
+aside .btn {
+    padding: 10px;
+    margin: 0 20px;
+    font-size: 20px;
+    border-radius: 25px;
+    transition: .3s linear;
+}
+
+.open:hover {
+    background-color: rgb(177, 177, 177);
+}
+
+.wrapper>main {
+    width: 100%;
+    margin: 50px 0;
+    height: 300px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+}
+
+.square {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(160, 122, 86);
+    transition: .2s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+div .square:nth-child(odd) {
+    background-color: rgb(114, 32, 32);
+}
+
+.square:hover {
+    opacity: .8;
+}
+
+.menu.instruction span {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.instruction .rules {
+    font-size: 23px;
+}
+
+.show.menu {
+    display: flex;
+}
+
+.score {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 150px;
+    width: 200px;
+    background-color: white;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid black;
+    box-shadow: 0 0 2px 2px black, 0 0 2px 3px black;
+    display: none;
+    z-index: 1;
+}
+
+.score.show {
+    display: flex;
+}
+
+.scoreS {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnScore {
+    width: 50%;
+    align-self: center;
+}
+
+.cover.show {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.choose.selected {
+    border: 2px solid red;
+}
